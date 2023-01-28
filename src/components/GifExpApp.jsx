@@ -7,9 +7,8 @@ export const GifExpApp = () => {
     const [categories, setCategories] = useState(['One Punch']);
 
     const onAddCategory = (newCategory)=>{
-        
+      
         if (categories.includes(newCategory)) return;
-
         setCategories(cat =>[newCategory,...categories,]);
     } 
     return(

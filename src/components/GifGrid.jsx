@@ -4,7 +4,7 @@ import { GifItem } from './GifItem';
 
 export const GifGrid = ({category}) => {
 
-  const {images,isLoading} = useFecthGifs(category);
+  const { images,isLoading } = useFecthGifs(category);//hooks
  console.log('isloading.',isLoading)
  return(
          
@@ -14,14 +14,14 @@ export const GifGrid = ({category}) => {
         {
           isLoading && <h2>Cargando...</h2>
         }
-        <div className='card-grid'>
-         {images.map((image)=>(
+        <div className ='card-grid'>
+         { images.map((image)=>(
            <GifItem 
            key = {image.id}
            {...image}/> 
-         ))
+          ))
          }
-         </div>
+        </div>
      </>
     
     

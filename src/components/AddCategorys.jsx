@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 export const AddCategorys = ({ onNewCategory }) => {
-
-const [inputValue, setinputValue] = useState('');
+//-------------------------------------------------------
+const [inputValue, setinputValue] = useState('');//estados
 
 const onInputChange = ({ target })=>{
     setinputValue(target.value);
@@ -16,7 +16,7 @@ const onSubmit= (event)=>{
   onNewCategory(inputValue.trim())
   setinputValue('');
   
-}
+}//---------------------------------------------
 return (
 <form onSubmit = { onSubmit }> {/*(event)=> onSubmit(event)*/}
 
